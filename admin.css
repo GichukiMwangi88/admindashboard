@@ -20,12 +20,33 @@
 
 .side-bar-content {
     border: 1px solid red;
+    display: grid;
     grid-column: 1;
-    grid-row: span 2;
+    grid-row: 2;
+    
+}
+
+.sidebartwo {
+    border: 1px solid red;
+    grid-column: 1;
+    grid-row: 3 / 4;
+}
+
+.sidebartwo ul {
+    list-style-type: none;
+    display: grid;
+    gap: 10px;
+}
+
+.side-bar-content ul {
+    list-style-type: none;
+    display: grid;
+    gap: 10px;
 }
 
 .header {
     border: 1px solid blue;
+    height: 15px;
 }
 
 
@@ -61,23 +82,18 @@
     
 }
 
-.card-header {
-    display: grid;
-    grid-column: 2;
-    grid-row: 2;
-}
-
 .projects {
     border: 1px solid red;
     display: grid;
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-row: 2 / 4;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
 }
 
-.card-header p {
-    text-align: left;
+.card-header {
+    display: grid;
+    justify-self: start;
 }
 
 .card {
@@ -87,18 +103,25 @@
 
 .header {
     display: grid;
+}
+
+.headerTwo {
     text-align: left;
 }
 
 .announcements {
     border: 1px solid blue;
     grid-column: 3;
-    grid-row: 3;
+    grid-row: 2;
 }
 
 .trending {
     border: 1px solid red;
     grid-column: 3;
+    grid-row: 3;
+    text-align: left;
 }
+
+
 
 
