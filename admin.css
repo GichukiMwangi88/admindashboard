@@ -50,6 +50,10 @@
     align-items: center;
 }
 
+.greeting p {
+    text-align: left;
+}
+
 .greeting ul {
     display: grid;
     list-style-type: none;
@@ -57,26 +61,39 @@
     
 }
 
+.card-header {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+}
+
 .projects {
     border: 1px solid red;
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(150px, 1fr));
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
 }
 
-.projects header {
+.card-header p {
     text-align: left;
 }
 
-.projects .card {
+.card {
     border: 1px solid blue;
     height: 150px;
+}
+
+.header {
+    display: grid;
+    text-align: left;
 }
 
 .announcements {
     border: 1px solid blue;
     grid-column: 3;
-    grid-row: 2 / 3;
+    grid-row: 3;
 }
 
 .trending {
