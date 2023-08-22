@@ -13,41 +13,93 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
     <link rel="stylesheet" href="admin.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <div class="header">Dashboard</div>
-      <div class="side-bar-content">
-        <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
-        </ul>
-      </div>
-      <div class="sidebartwo">
-        <ul>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
-        </ul>
+      <div class="side-nav">
+        <div class="header" style="font-size: 22px">
+          <span
+            class="material-symbols-outlined"
+            id="icon"
+            style="font-size: 30px"
+          >
+            dashboard </span
+          >Dashboard
+        </div>
+
+        <div class="side-bar-content">
+          <ul>
+            <li>
+              <span class="material-symbols-outlined" id="icon"> home </span
+              >&nbsp;Home
+            </li>
+            <li>
+              <span class="material-symbols-outlined" id="icon"> person </span
+              >&nbsp;Profile
+            </li>
+            <li>
+              <span class="material-symbols-outlined" id="icon">
+                mode_comment </span
+              >&nbsp;Messages
+            </li>
+            <li>
+              <span class="material-symbols-outlined" id="icon"> history </span
+              >&nbsp;History
+            </li>
+            <li>
+              <span class="material-symbols-outlined" id="icon"> task </span
+              >&nbsp;Tasks
+            </li>
+            <li>
+              <span class="material-symbols-outlined" id="icon">
+                communities </span
+              >&nbsp;Communities
+            </li>
+          </ul>
+        </div>
+        <div class="sidebartwo">
+          <ul>
+            <li>
+              <span class="material-symbols-outlined" id="icon"> settings </span
+              >&nbsp;Settings
+            </li>
+            <li>
+              <span class="material-symbols-outlined" id="icon"> help </span
+              >&nbsp;Support
+            </li>
+            <li>
+              <span class="material-symbols-outlined" id="icon">
+                verified_user </span
+              >&nbsp;Privacy
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="navbar">
         <div class="section-header">
-          <input type="text" />
-          <p>placeholder for icon</p>
-          <p>Robert Mwangi</p>
+          <span class="material-symbols-outlined"> search </span
+          ><input type="text" />
+          <div class="profile">
+            <span class="material-symbols-outlined">
+              notifications_active
+            </span>
+            <img class="avatar" src="icons8-avatar-100.png" />
+            <p>Robert Mwangi</p>
+          </div>
         </div>
 
         <div class="greeting">
-          <p>Hi there,</p>
+          <img class="avatar" src="icons8-avatar-100.png" />
+          <p>Hi there, <strong>Robert Mwangi(@mwangi)</strong></p>
           <br />
-          <p>Robert Mwangi(@mwangi)</p>
           <ul>
             <li>New</li>
             <li>Upload</li>
@@ -59,50 +111,98 @@
       <div class="projects">
         <div class="card">
           <p class="title">Super Cool Project</p>
-          <p></p>
+          <p>Check out project here.</p>
+          <div class="icons">
+            <span class="material-symbols-outlined"> star </span>
+            <span class="material-symbols-outlined"> visibility </span>
+            <span class="material-symbols-outlined"> share </span>
+          </div>
         </div>
         <div class="card">
           <p class="title">Less Cool Project</p>
-          <p></p>
+          <p>Cool project here.</p>
+          <div class="icons">
+            <span class="material-symbols-outlined"> star </span>
+            <span class="material-symbols-outlined"> visibility </span>
+            <span class="material-symbols-outlined"> share </span>
+          </div>
         </div>
         <div class="card">
           <p class="title">Impossible App</p>
-          <p></p>
+          <p>Impossible app here.</p>
+          <div class="icons">
+            <span class="material-symbols-outlined"> star </span>
+            <span class="material-symbols-outlined"> visibility </span>
+            <span class="material-symbols-outlined"> share </span>
+          </div>
         </div>
         <div class="card">
           <p class="title">Easy Peasy App</p>
-          <p></p>
+          <p>Easy peasy app here.</p>
+          <div class="icons">
+            <span class="material-symbols-outlined"> star </span>
+            <span class="material-symbols-outlined"> visibility </span>
+            <span class="material-symbols-outlined"> share </span>
+          </div>
         </div>
         <div class="card">
           <p class="title">Ad Blocker</p>
-          <p></p>
+          <p>Easy peasy app here.</p>
+          <div class="icons">
+            <span class="material-symbols-outlined"> star </span>
+            <span class="material-symbols-outlined"> visibility </span>
+            <span class="material-symbols-outlined"> share </span>
+          </div>
         </div>
         <div class="card">
           <p class="title">Money Maker</p>
-          <p></p>
+          <p>Money maker app here.</p>
+          <div class="icons">
+            <span class="material-symbols-outlined"> star </span>
+            <span class="material-symbols-outlined"> visibility </span>
+            <span class="material-symbols-outlined"> share </span>
+          </div>
         </div>
       </div>
 
       <div class="announcements">
         <div class="headerTwo">Announcements</div>
-        <p class="title">Site maintenance</p>
-        <p>placeholder text</p>
-        <p class="title">Community Share Day</p>
-        <p>placeholder text</p>
-        <p class="title">Updated Privacy Policy</p>
-        <p>placeholder text</p>
+        <div class="side-tile-one">
+          <p class="title">Site maintenance</p>
+          <p>placeholder text</p>
+          <hr />
+          <p class="title">Community Share Day</p>
+          <p>placeholder text</p>
+          <hr />
+          <p class="title">Updated Privacy Policy</p>
+          <p>placeholder text</p>
+        </div>
       </div>
 
       <div class="trending">
-        <p class="title">Trending</p>
-        <p class="users">@tegan</p>
-        <p>World Peace Builder</p>
-        <p class="users">@mwangi</p>
-        <p>Super Cool Project</p>
-        <p>@kendall</p>
-        <p>Life changing App</p>
-        <p>@alex</p>
-        <p>No Traffic Maker</p>
+        <div class="headerTwo">Trending</div>
+        <div class="side-tile-two">
+          <div class="trending-avatar">
+            <img class="avatar" src="avatar.png" />
+            <p>@tegan</p>
+            <p>World Peace Builder</p>
+          </div>
+          <div class="trending-avatar">
+            <img class="avatar" src="man.png" />
+            <p>@mwangi</p>
+            <p>Super Cool Project</p>
+          </div>
+          <div class="trending-avatar">
+            <img class="avatar" src="man.png" />
+            <p>@kendall</p>
+            <p>Life changing App</p>
+          </div>
+          <div class="trending-avatar">
+            <img class="avatar" src="avatar (1).png" />
+            <p>@alex</p>
+            <p>No Traffic Maker</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
